@@ -44,6 +44,25 @@ void setup () {
   }
   println("ordered_alphabet", ordered_alphabet);
 
+  String ordered[] = ordered_alphabet.split("");
+  String firstHalf = "";
+  String secondHalf = "";
+  int i = 0;
+  for (String s : ordered) {
+    if (i%2==0) {
+      firstHalf+=s;
+    } else {
+      secondHalf+=s;
+    }
+    i++;
+  }
+  firstHalf = reverse(firstHalf);
+  //secondHalf = reverse(secondHalf);
+
+  ordered_alphabet = firstHalf + secondHalf;
+  println("ordered_alphabet", ordered_alphabet);
+  // println("secondHalf", secondHalf);
+
   int x = 0; 
   int y = 0;
   for (Character c : chars) {
@@ -56,4 +75,19 @@ void setup () {
   }
 
   saveFrame("alphabet.png");
+}
+
+public static String reverse(String input){
+    char[] in = input.toCharArray();
+    int begin=0;
+    int end=in.length-1;
+    char temp;
+    while(end>begin){
+        temp = in[begin];
+        in[begin]=in[end];
+        in[end] = temp;
+        end--;
+        begin++;
+    }
+    return new String(in);
 }
