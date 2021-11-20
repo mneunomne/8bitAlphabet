@@ -1,3 +1,3 @@
 # 8bit Alphabet
 
-![]('alphabet.png')
+![]("https://raw.githubusercontent.com/mneunomne/8bitAlphabet/master/alphabet.png")
