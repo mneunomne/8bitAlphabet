@@ -55,20 +55,5 @@ void setup () {
     x+=w;
   }
 
+  saveFrame("alphabet.png");
 }
-
-/*
-void draw() {
-  int x = 0; 
-  int y = 0;
-  for (Character c : chars) {
-    if (x>=width) {
-      x=0;
-      y+=h;
-    }
-    println("x y", x, y);
-    c.display(x, y);
-    x+=w;
-  }
-}
-*/
