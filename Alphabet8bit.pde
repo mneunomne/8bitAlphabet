@@ -6,7 +6,7 @@ int w, h;
 
 PFont font; 
 
-int fontsize = 25;
+int fontsize = 15;
 
 int offset_x;
 int offset_y = fontsize;
@@ -16,7 +16,7 @@ ArrayList <PGraphics> pgs = new ArrayList<PGraphics>();
 ArrayList <Character> chars = new ArrayList<Character>();
 
 void setup () {
-  size(800, 800);
+  size(400, 400);
   w = width / cols;
   h = w;
 
