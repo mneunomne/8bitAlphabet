@@ -1,3 +1,3 @@
 # 8bit Alphabet
 
-![]('./alphabet.png')
+![]('alphabet.png')
