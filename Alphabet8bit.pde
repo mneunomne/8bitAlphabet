@@ -16,7 +16,7 @@ ArrayList <PGraphics> pgs = new ArrayList<PGraphics>();
 ArrayList <Character> chars = new ArrayList<Character>();
 
 void setup () {
-  size(400, 400);
+  size(512, 512);
   w = width / cols;
   h = w;
 
